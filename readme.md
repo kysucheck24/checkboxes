@@ -19,5 +19,14 @@ This is a jQuery plugin support checked and unchecked checkboxes
 	</ul>
 
 ## USE
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="checkboxes.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.selectAll').checkboxes({
+				itemSelect: 'chk' // all checkbox
+			});
+		});
+	</script>
 
 ## DEMO

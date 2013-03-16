@@ -10,6 +10,7 @@
 <body>
 	<div class="row">
 		<h1>Checked and Unchecked Checkboxes</h1>
+		<h2>Example 1: No Checked All</h2>
 		<h3><input type="checkbox" class="selectAll"><span>Select All</span></h3>
 		<ul class="list">
 			<li><input type="checkbox" id="chk01" name="chk01"><span>Item 01</span></input></li>
@@ -32,9 +33,37 @@
 			<li><input type="checkbox" id="chk18" name="chk18"><span>Item 18</span></input></li>
 			<li><input type="checkbox" id="chk19" name="chk19"><span>Item 19</span></input></li>
 			<li><input type="checkbox" id="chk20" name="chk20"><span>Item 20</span></input></li>
+			<li><input type="checkbox" id="chk21" name="chk21"><span>Item 21</span></input></li>
+			<li><input type="checkbox" id="chk22" name="chk22"><span>Item 22</span></input></li>
+			<li><input type="checkbox" id="chk23" name="chk23"><span>Item 23</span></input></li>
+			<li><input type="checkbox" id="chk24" name="chk24"><span>Item 24</span></input></li>
+			<li><input type="checkbox" id="chk25" name="chk25"><span>Item 25</span></input></li>
+		</ul>
+	</div>
+	<div class="row">
+		<h2>Examp 02: Checked All</h2>
+		<h3><input type="checkbox" class="selectHobbies" checked><span>All Hobbies</span></h3>
+		<ul class="list">
+			<li><input type="checkbox" id="hobby01" name="hobby01"><span>Hobby 01</span></li>
+			<li><input type="checkbox" id="hobby02" name="hobby02"><span>Hobby 02</span></li>
+			<li><input type="checkbox" id="hobby03" name="hobby03"><span>Hobby 03</span></li>
+			<li><input type="checkbox" id="hobby04" name="hobby04"><span>Hobby 04</span></li>
+			<li><input type="checkbox" id="hobby05" name="hobby05"><span>Hobby 05</span></li>
 		</ul>
 	</div>
 	<script src="js/vendor/jquery-1.9.1.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="checkboxes.js"></script>
+	<script>
+		$(function() {
+			$('.selectAll').checkboxes({
+				itemSelect: 'chk'
+			});
+
+			// Select all hobbies
+			$('.selectHobbies').checkboxes({
+				itemSelect: 'hobby'
+			});
+		});
+	</script>
 </body>
 </html>
