@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Select-all-checkbox by dangvanthanh</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/dangvanthanh/select-all-checkbox">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/dangvanthanh/select-all-checkbox/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/dangvanthanh/select-all-checkbox/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Select-all-checkbox</h1>
+          <p>This is jQuery plugin support checked and unchecked checkboxes</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/dangvanthanh">dangvanthanh</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Checked and Unchecked Checkboxes</h1>
+
+<p>This is a jQuery plugin support checked and unchecked checkboxes</p>
+
+<h2>HTML</h2>
+
+<pre><code>&lt;h3&gt;&lt;input type="checkbox" class="selectAll"&gt;&lt;span&gt;Select All&lt;/span&gt;&lt;/h3&gt;
+&lt;ul class="list"&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk01" name="chk01"&gt;&lt;span&gt;Item 01&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk02" name="chk02"&gt;&lt;span&gt;Item 02&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk03" name="chk03"&gt;&lt;span&gt;Item 03&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk04" name="chk04"&gt;&lt;span&gt;Item 04&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk05" name="chk05"&gt;&lt;span&gt;Item 05&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk06" name="chk06"&gt;&lt;span&gt;Item 06&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk07" name="chk07"&gt;&lt;span&gt;Item 07&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk08" name="chk08"&gt;&lt;span&gt;Item 08&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk09" name="chk09"&gt;&lt;span&gt;Item 09&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;input type="checkbox" id="chk10" name="chk10"&gt;&lt;span&gt;Item 10&lt;/span&gt;&lt;/input&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h2>USE</h2>
+
+<pre><code>&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="checkboxes.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    $(document).ready(function() {
+        $('.selectAll').checkboxes({
+            itemSelect: 'chk' // all checkbox
+        });
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h2>DEMO</h2>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
