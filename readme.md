@@ -28,5 +28,3 @@ This is a jQuery plugin support checked and unchecked checkboxes
 			});
 		});
 	</script>
-
-## DEMO
