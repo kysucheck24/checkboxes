@@ -24,7 +24,7 @@ This is a jQuery plugin support checked and unchecked checkboxes
 	<script>
 		$(document).ready(function() {
 			$('.selectAll').checkboxes({
-				itemSelect: 'chk' // all checkbox
+				itemSelect: 'chk' // name of all child checkbox
 			});
 		});
 	</script>

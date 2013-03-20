@@ -1,3 +1,9 @@
+/*
+ * Checkboxes v1.0.0 - jQuery Plugin
+ * https://github.com/dangvanthanh/checkboxes
+ * Copyright (c) 2013 Dang Van Thanh
+ * Licensed under MIT
+ */
 (function($) {
 
 	$.fn.extend({
@@ -34,13 +40,12 @@
 							$(this).prop('checked', false);
 						});
 					}
-					return false;
 				});
 
 				// Unchecked checkboxes for all select
 				$itemCheckbox.change(function() {
 					var flag = true;
-					var _self = $('input[name^="' + obj.itemSelect + '"]');
+					var _self = $itemCheckbox;
 
 					if (_self.is(':checked') === false) {
 						$selectAll.prop('checked', false);
